@@ -1,3 +1,4 @@
+
 {
   "name": "domino-sky",
   "private": true,
@@ -6,9 +7,9 @@
   "description": "Domino Sky — Flight Disruption Cascade & Recovery Simulator",
   "scripts": {
     "dev": "vite",
-    "build": "tsc --noEmit -p tsconfig.json && vite build",
+    "build": "node ./node_modules/typescript/bin/tsc --noEmit -p tsconfig.json && vite build",
     "preview": "vite preview",
-    "typecheck": "tsc --noEmit -p tsconfig.json",
+    "typecheck": "node ./node_modules/typescript/bin/tsc --noEmit -p tsconfig.json",
     "test": "vitest run"
   },
   "dependencies": {
